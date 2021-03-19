@@ -18,11 +18,8 @@ const squadre = [
 
 
 for ( let i = 0; i <squadre.length; i++){
-    var {punti, falli} = squadre[i];
-    punti = Math.floor(Math.random() * 100) + 1;;
-    falli = Math.floor(Math.random() * 10) + 1;
-    squadre[i].punti = punti;
-    squadre[i].falli = falli;
+    squadre[i].punti = Math.floor(Math.random() * 100) + 1;;;
+    squadre[i].falli = Math.floor(Math.random() * 10) + 1;;
 }
 
 console.log(squadre);
