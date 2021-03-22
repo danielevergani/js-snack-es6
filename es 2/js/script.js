@@ -24,18 +24,25 @@ for ( let i = 0; i <squadre.length; i++){
 
 console.log(squadre);
 
-let squadre2 = [];
-let singolaSquadra
+// let squadre2 = [];
+// let singolaSquadra
 
-for ( let i = 0; i <squadre.length; i++){
-    var {nome, falli} = squadre[i];
+// for ( let i = 0; i <squadre.length; i++){
+//     var {nome, falli} = squadre[i];
 
-    singolaSquadra = {
-        nome,
-        falli,
-    };
+//     singolaSquadra = {
+//         nome,
+//         falli,
+//     };
 
-    squadre2.push(singolaSquadra);
-}
+//     squadre2.push(singolaSquadra);
+// }
 
-console.log(squadre2);
+// console.log(squadre2);
+
+const nuovaSquadra = squadre.map(( elemento ) => {
+    return {nome: elemento.nome, 
+        falli: elemento.falli};
+});
+
+console.log(nuovaSquadra);
